@@ -1,0 +1,25 @@
+python
+---------
+A small sampling of some of the python scripts I've written. 
+
+Contents
+--------
+ipban2.py - Scan linux server logs & ban ip addresses making malicious or abusive requests
+
+	--Periodically run this script to scan webserver (nginx) logs for abusive
+	  requests or vulnerability probes. Bans ip addresses based on predetermined
+	  signatures (see flags[] below), or manually by entering an offending ip
+	  address as an argument on launch.
+
+	--Built & used with the nginx webserver on Fedora 14 Linux. Requires: root,
+	  iptables, nginx-style log format. Can be easily adapted to other Linux
+	  distros or log formats.
+
+todo-mail.py - Send a quick to-do email to your desktop while you're away from your desk
+
+	--Runs as a server-side web app and sends an email reminder containing the user 
+	  supplied subject and message contained in the requested URL. I built this app 
+	  for times when I was away from my desk and needed a to-do reminder to hit my 
+	  inbox. Much more streamlined than using a full email client like Gmail. This is the 
+	  server-side script. The connecting client could be another python script, a 
+	  javascript enabled html file, etc.
